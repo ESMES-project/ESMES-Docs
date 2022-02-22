@@ -1,4 +1,4 @@
-# Non-functional hardware requirements
+# Abstract hardware requirements
 ## Modules
 * ESMES will consist of two modules: a capture module (CM) with an STM32 microcontroller, and an interface and communication module (ICM) with an ESP32 SoC.
   * The capture module (CM) will be responsible for recording the voltage and current signals. 
