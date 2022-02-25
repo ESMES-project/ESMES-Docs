@@ -7,6 +7,8 @@
 ## Capture Module (CM)
 
 * CM should record voltage and alternating current signals with as little noise as possible.
+* CM should have at least 6 channels: one channel for each main's voltage, and 2 channels for each main's current (one for bigger and other for smaller power limits).
+* CM channels should have software adjustable gain.
 * CM should capture signals with 6kHz sampling frequency.
 * CM should send a pack of samples 2 times per second for ICM via UART
 * CM should use 3 GPIO outputs as a bus to log up to 8 error flags (0000=no error, 1000=error 1, 1001=error 2, 1010=error 3, 1011=error 4, 1100=error 5, 1101=error 6, 1110=error 7, 1111=error 8).
@@ -18,6 +20,8 @@
 
 * ICM should store the recorded signals in case of connection drops.
 * ICM should connect to the user's wifi and will host a web server.
+* ICM should store wifi SSID and PASSWORD in the flash memory.
+* ICM should store CM configurations in the flash memory to configure CM on reseting.
 
 ## Power Supply
 
